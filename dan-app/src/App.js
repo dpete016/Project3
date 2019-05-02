@@ -9,6 +9,10 @@ import EditTodo from "./components/edit-todo.component";
 import TodosList from "./components/todos-list.component";
 
 import logo from "./logo.png";
+import bg from "./bg.jpg"
+
+
+
 
 function App() {
   return (
@@ -35,7 +39,7 @@ function App() {
 
 
         <Route path="/" exact component={TodosList} />
-        <Route path="/" component={EditTodo} />
+        <Route path="/edit/:id" component={EditTodo} />
         <Route path="/" component={CreateTodo} />
       </div>
      
